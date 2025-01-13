@@ -38,6 +38,7 @@ class DER(BaseLearner):
     def after_task(self):
         self._known_classes = self._total_classes
         logging.info("Exemplar size: {}".format(self.exemplar_size))
+        self.save_checkpoint("weights/")
 
     def incremental_train(self, data_manager):
         self._cur_task += 1

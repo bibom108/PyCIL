@@ -120,6 +120,7 @@ class BaseLearner(object):
 
     def _compute_accuracy(self, model, loader):
         model.eval()
+        model.to(self._device)
         correct, total = 0, 0
         for i, (_, inputs, targets) in enumerate(loader):
             inputs = inputs.to(self._device)
@@ -133,6 +134,7 @@ class BaseLearner(object):
 
     def _eval_cnn(self, loader):
         self._network.eval()
+        self._network.to(self._device)
         y_pred, y_true = [], []
         for _, (_, inputs, targets) in enumerate(loader):
             inputs = inputs.to(self._device)
@@ -150,6 +152,7 @@ class BaseLearner(object):
 
     def _eval_nme(self, loader, class_means):
         self._network.eval()
+        self._network.to(self._device)
         vectors, y_true = self._extract_vectors(loader)
         vectors = (vectors.T / (np.linalg.norm(vectors.T, axis=0) + EPSILON)).T
 

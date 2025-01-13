@@ -1,0 +1,22 @@
+idx	label	predict	correct	time
+Final result 0 [0, 10]: 507 , 125
+Final result 1 [10, 20]: 246 , 98
+Final result 1 [0, 10]: 400 , 152
+Final result 2 [20, 30]: 245 , 118
+Final result 2 [10, 20]: 181 , 90
+Final result 2 [0, 10]: 400 , 134
+Final result 3 [30, 40]: 334 , 129
+Final result 3 [20, 30]: 163 , 94
+Final result 3 [10, 20]: 96 , 96
+Final result 3 [0, 10]: 249 , 122
+Final result 4 [40, 50]: 289 , 153
+Final result 4 [30, 40]: 294 , 154
+Final result 4 [20, 30]: 140 , 84
+Final result 4 [10, 20]: 82 , 87
+Final result 4 [0, 10]: 230 , 110
+Final result 5 [50, 60]: 159 , 129
+Final result 5 [40, 50]: 275 , 140
+Final result 5 [30, 40]: 219 , 124
+Final result 5 [20, 30]: 118 , 78
+Final result 5 [10, 20]: 75 , 79
+Final result 5 [0, 10]: 157 , 118
